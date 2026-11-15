@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://bumj12qwof4vx"]
+
+[ext_resource type="Script" uid="uid://bs6b2ku534vcx" path="res://big_ass_trap.gd" id="1_qil1q"]
+[ext_resource type="Texture2D" uid="uid://7jejvumwv3te" path="res://Pixel Adventure 1/Free/Traps/Spikes/Idle.png" id="2_holnv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_arobh"]
+size = Vector2(15.058824, 7.999999)
+
+[node name="big ass trap" type="Node2D" unique_id=206822971]
+script = ExtResource("1_qil1q")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1272424514]
+position = Vector2(-0.5000007, 0.5)
+scale = Vector2(1.0625, 1.0625)
+texture = ExtResource("2_holnv")
+
+[node name="Area2D" type="Area2D" parent="Sprite2D" unique_id=1967208866]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D" unique_id=1885534974]
+position = Vector2(-0.4705875, 4.4705887)
+scale = Vector2(1, 1.0000002)
+shape = SubResource("RectangleShape2D_arobh")
+
+[connection signal="body_entered" from="Sprite2D/Area2D" to="." method="_on_area_2d_body_entered"]

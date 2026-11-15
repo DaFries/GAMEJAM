@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bx1g5hrptwcx0"
-path="res://.godot/imported/background3.png-394c6dcf55b75dd8d4565f5a939b6b86.ctex"
+uid="uid://gcdqkunwyg3h"
+path="res://.godot/imported/Screenshot (12).png-55886c7533601b4e4cbc9db9dfafee1a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://PixelFantasy_Caves_1.0/background3.png"
-dest_files=["res://.godot/imported/background3.png-394c6dcf55b75dd8d4565f5a939b6b86.ctex"]
+source_file="res://Pixel Adventure 1/Free/Items/Screenshot (12).png"
+dest_files=["res://.godot/imported/Screenshot (12).png-55886c7533601b4e4cbc9db9dfafee1a.ctex"]
 
 [params]
 

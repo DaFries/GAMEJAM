@@ -1,11 +1,16 @@
 extends CharacterBody2D
+class_name Player
+
+
 
 
 const SPEED = 300.0
-const JUMP_VELOCITY = -300.0
+const JUMP_VELOCITY = -360.0
 var JUMP_COUNT = 0
-var MAX_JUMP = 2
+var MAX_JUMP = 20
 
+func _ready():
+	GameManager.player = self
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -18,6 +23,8 @@ func _physics_process(delta: float) -> void:
 		velocity.y = JUMP_VELOCITY
 		JUMP_COUNT += 1
 		
+	if position.y >= 600:
+		die()
 
 
 
@@ -31,3 +38,8 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+	
+	
+func die ():
+	GameManager.respawn_player()
+	
